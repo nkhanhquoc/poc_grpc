@@ -10,6 +10,7 @@ import com.ascend.proto.SumResponse;
 import io.grpc.ManagedChannel;
 import io.grpc.ManagedChannelBuilder;
 import io.grpc.stub.StreamObserver;
+import java.util.Arrays;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.TimeUnit;
 
@@ -33,11 +34,57 @@ public class ClientGrpc {
 //    doUnaryCall();
 //    doSumElements();
 //    doStreamingServer();
-    doStreamingClient(channel);
-
+//    doStreamingClient(channel);
+      doBiDiStreaming(channel);
     System.out.println("shutting down channel");
     channel.shutdown();
     //channel
+  }
+
+  private void doBiDiStreaming(ManagedChannel channel){
+    asyncStub = GreetingServiceGrpc.newStub(channel);
+    CountDownLatch latch = new CountDownLatch(1);
+    StreamObserver<GreetingRequest> requestStreamObserver = asyncStub.helloEveryone(
+        new StreamObserver<GreetingResponse>() {
+          @Override
+          public void onNext(GreetingResponse greetingResponse) {
+            System.out.println("Get response from server: "+greetingResponse.getResult());
+          }
+
+          @Override
+          public void onError(Throwable throwable) {
+            latch.countDown();
+          }
+
+          @Override
+          public void onCompleted() {
+            System.out.println("server is done sending data");
+            latch.countDown();
+          }
+        });
+
+    Arrays.asList("Khanh", "Khanh_1", "Khanh_3").forEach(
+        name -> {
+          System.out.println("client send data: "+name);
+          requestStreamObserver.onNext(
+              GreetingRequest.newBuilder()
+                  .setGreeting(Greeting.newBuilder().setGreeting(name).build())
+                  .build()
+          );
+          try {
+            Thread.sleep(1000);
+          } catch (InterruptedException e) {
+            e.printStackTrace();
+          }
+        }
+    );
+    requestStreamObserver.onCompleted();
+
+    try {
+      latch.await(5, TimeUnit.SECONDS);
+    } catch (InterruptedException e) {
+      e.printStackTrace();
+    }
   }
 
   private void doUnaryCall(){

@@ -5,28 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="60a88cdc-4d56-47fb-9049-2b7d3fb5a74f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/poc.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ascend/grpc/client/ClientGrpc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ascend/grpc/client/ClientGrpc.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ascend/grpc/server/GreetServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ascend/grpc/server/GreetServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/proto/com/ascend/proto/greetings.proto" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/proto/com/ascend/proto/greetings.proto" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/poc.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ascend/grpc/client/ClientGrpc.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ascend/grpc/client/ClientGrpc.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ascend/grpc/server/GreetServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ascend/grpc/server/GreetServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ascend/proto/GreetingServiceGrpc$GreetingServiceBaseDescriptorSupplier.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ascend/proto/GreetingServiceGrpc$GreetingServiceBaseDescriptorSupplier.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ascend/proto/GreetingServiceGrpc$GreetingServiceBlockingStub.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ascend/proto/GreetingServiceGrpc$GreetingServiceBlockingStub.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ascend/proto/GreetingServiceGrpc$GreetingServiceFileDescriptorSupplier.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ascend/proto/GreetingServiceGrpc$GreetingServiceFileDescriptorSupplier.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ascend/proto/GreetingServiceGrpc$GreetingServiceFutureStub.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ascend/proto/GreetingServiceGrpc$GreetingServiceFutureStub.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ascend/proto/GreetingServiceGrpc$GreetingServiceImplBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ascend/proto/GreetingServiceGrpc$GreetingServiceImplBase.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ascend/proto/GreetingServiceGrpc$GreetingServiceMethodDescriptorSupplier.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ascend/proto/GreetingServiceGrpc$GreetingServiceMethodDescriptorSupplier.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ascend/proto/GreetingServiceGrpc$GreetingServiceStub.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ascend/proto/GreetingServiceGrpc$GreetingServiceStub.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ascend/proto/GreetingServiceGrpc$MethodHandlers.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ascend/proto/GreetingServiceGrpc$MethodHandlers.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ascend/proto/GreetingServiceGrpc.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ascend/proto/GreetingServiceGrpc.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ascend/proto/Greetings.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ascend/proto/Greetings.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ascend/proto/greetings.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-sources/protobuf/grpc-java/com/ascend/proto/GreetingServiceGrpc.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/grpc-java/com/ascend/proto/GreetingServiceGrpc.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-sources/protobuf/java/com/ascend/proto/Greetings.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/com/ascend/proto/Greetings.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -58,8 +39,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/proto/com/ascend/proto/greetings.proto">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="513">
-              <caret line="29" column="19" lean-forward="true" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="19" />
+            <state relative-caret-position="667">
+              <caret line="37" column="19" selection-start-line="37" selection-start-column="6" selection-end-line="37" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -76,10 +57,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/ascend/grpc/server/GreetServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="684">
-              <caret line="76" column="39" selection-start-line="76" selection-start-column="39" selection-end-line="76" selection-end-column="39" />
+            <state relative-caret-position="640">
+              <caret line="106" column="26" selection-start-line="106" selection-start-column="26" selection-end-line="106" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#3139#3140#0" expanded="true" />
+                <element signature="e#3172#3173#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -109,10 +92,12 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/ascend/grpc/client/ClientGrpc.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="219">
-              <caret line="89" column="33" selection-start-line="89" selection-start-column="33" selection-end-line="89" selection-end-column="33" />
+            <state relative-caret-position="283">
+              <caret line="83" column="19" selection-start-line="83" selection-start-column="19" selection-end-line="83" selection-end-column="19" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1815#1816#0" expanded="true" />
+                <element signature="e#1858#1859#0" expanded="true" />
                 <element signature="method#duUnaryCall#0;class#ClientGrpc#0" />
                 <element signature="method#doSumElements#0;class#ClientGrpc#0" />
                 <element signature="method#doStreamingServer#0;class#ClientGrpc#0" />
@@ -133,11 +118,22 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/target/generated-sources/protobuf/grpc-java/com/ascend/proto/GreetingServiceGrpc.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="265">
-              <caret line="414" column="70" selection-start-line="414" selection-start-column="64" selection-end-line="414" selection-end-column="70" />
+            <state relative-caret-position="139">
+              <caret line="154" column="57" selection-start-line="154" selection-start-column="44" selection-end-line="154" selection-end-column="57" />
               <folding>
                 <element signature="e#3908#3967#0" expanded="true" />
                 <element signature="e#5698#5767#0" expanded="true" />
+                <element signature="e#9329#9398#0" expanded="true" />
+                <element signature="e#13975#13976#0" expanded="true" />
+                <element signature="e#14003#14004#0" expanded="true" />
+                <element signature="e#16113#16114#0" expanded="true" />
+                <element signature="e#16141#16142#0" expanded="true" />
+                <element signature="e#17408#17409#0" expanded="true" />
+                <element signature="e#17436#17437#0" expanded="true" />
+                <element signature="e#19201#19241#0" expanded="true" />
+                <element signature="e#20110#20150#0" expanded="true" />
+                <element signature="e#21839#21840#0" expanded="true" />
+                <element signature="e#21881#21882#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -156,6 +152,7 @@
     <findStrings>
       <find>manyTime</find>
       <find>longHe</find>
+      <find>HelloEveryone</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -473,12 +470,12 @@
       <workItem from="1568521592750" duration="975000" />
       <workItem from="1568522584510" duration="6555000" />
       <workItem from="1568539111032" duration="1611000" />
-      <workItem from="1568564869728" duration="5110000" />
+      <workItem from="1568564869728" duration="6986000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14251000" />
+    <option name="totallyTimeSpent" value="16127000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -552,30 +549,50 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_212/src.zip!/java/util/concurrent/CountDownLatch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2552">
+          <caret line="155" column="13" selection-start-line="155" selection-start-column="13" selection-end-line="155" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/proto/com/ascend/proto/greetings.proto">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="29" column="19" lean-forward="true" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="19" />
+        <state relative-caret-position="667">
+          <caret line="37" column="19" selection-start-line="37" selection-start-column="6" selection-end-line="37" selection-end-column="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/target/generated-sources/protobuf/grpc-java/com/ascend/proto/GreetingServiceGrpc.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="414" column="70" selection-start-line="414" selection-start-column="64" selection-end-line="414" selection-end-column="70" />
+        <state relative-caret-position="139">
+          <caret line="154" column="57" selection-start-line="154" selection-start-column="44" selection-end-line="154" selection-end-column="57" />
           <folding>
             <element signature="e#3908#3967#0" expanded="true" />
             <element signature="e#5698#5767#0" expanded="true" />
+            <element signature="e#9329#9398#0" expanded="true" />
+            <element signature="e#13975#13976#0" expanded="true" />
+            <element signature="e#14003#14004#0" expanded="true" />
+            <element signature="e#16113#16114#0" expanded="true" />
+            <element signature="e#16141#16142#0" expanded="true" />
+            <element signature="e#17408#17409#0" expanded="true" />
+            <element signature="e#17436#17437#0" expanded="true" />
+            <element signature="e#19201#19241#0" expanded="true" />
+            <element signature="e#20110#20150#0" expanded="true" />
+            <element signature="e#21839#21840#0" expanded="true" />
+            <element signature="e#21881#21882#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ascend/grpc/server/GreetServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="684">
-          <caret line="76" column="39" selection-start-line="76" selection-start-column="39" selection-end-line="76" selection-end-column="39" />
+        <state relative-caret-position="640">
+          <caret line="106" column="26" selection-start-line="106" selection-start-column="26" selection-end-line="106" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#3139#3140#0" expanded="true" />
+            <element signature="e#3172#3173#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -590,19 +607,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_212/src.zip!/java/util/concurrent/CountDownLatch.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2552">
-          <caret line="155" column="13" selection-start-line="155" selection-start-column="13" selection-end-line="155" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ascend/grpc/client/ClientGrpc.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="89" column="33" selection-start-line="89" selection-start-column="33" selection-end-line="89" selection-end-column="33" />
+        <state relative-caret-position="283">
+          <caret line="83" column="19" selection-start-line="83" selection-start-column="19" selection-end-line="83" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1815#1816#0" expanded="true" />
+            <element signature="e#1858#1859#0" expanded="true" />
             <element signature="method#duUnaryCall#0;class#ClientGrpc#0" />
             <element signature="method#doSumElements#0;class#ClientGrpc#0" />
             <element signature="method#doStreamingServer#0;class#ClientGrpc#0" />

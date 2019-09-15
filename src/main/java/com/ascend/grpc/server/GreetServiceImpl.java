@@ -79,6 +79,31 @@ public class GreetServiceImpl extends GreetingServiceImplBase {
 
     };
     return streamObserverRequest;
+  }
 
+  @Override
+  public StreamObserver<GreetingRequest> helloEveryone(
+      StreamObserver<GreetingResponse> responseObserver) {
+
+    StreamObserver<GreetingRequest> streamObserver = new StreamObserver<GreetingRequest>() {
+      @Override
+      public void onNext(GreetingRequest greetingRequest) {
+        GreetingResponse response = GreetingResponse.newBuilder()
+            .setResult("Hello "+greetingRequest.getGreeting().getGreeting())
+            .build();
+        responseObserver.onNext(response);
+      }
+
+      @Override
+      public void onError(Throwable throwable) {
+
+      }
+
+      @Override
+      public void onCompleted() {
+        responseObserver.onCompleted();
+      }
+    };
+    return streamObserver;
   }
 }
