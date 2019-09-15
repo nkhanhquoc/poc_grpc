@@ -89,6 +89,68 @@ public final class GreetingServiceGrpc {
     return getSumMethod;
   }
 
+  private static volatile io.grpc.MethodDescriptor<com.ascend.proto.GreetingRequest,
+      com.ascend.proto.GreetingResponse> getHelloManyTimesMethod;
+
+  @io.grpc.stub.annotations.RpcMethod(
+      fullMethodName = SERVICE_NAME + '/' + "HelloManyTimes",
+      requestType = com.ascend.proto.GreetingRequest.class,
+      responseType = com.ascend.proto.GreetingResponse.class,
+      methodType = io.grpc.MethodDescriptor.MethodType.SERVER_STREAMING)
+  public static io.grpc.MethodDescriptor<com.ascend.proto.GreetingRequest,
+      com.ascend.proto.GreetingResponse> getHelloManyTimesMethod() {
+    io.grpc.MethodDescriptor<com.ascend.proto.GreetingRequest, com.ascend.proto.GreetingResponse> getHelloManyTimesMethod;
+    if ((getHelloManyTimesMethod = GreetingServiceGrpc.getHelloManyTimesMethod) == null) {
+      synchronized (GreetingServiceGrpc.class) {
+        if ((getHelloManyTimesMethod = GreetingServiceGrpc.getHelloManyTimesMethod) == null) {
+          GreetingServiceGrpc.getHelloManyTimesMethod = getHelloManyTimesMethod =
+              io.grpc.MethodDescriptor.<com.ascend.proto.GreetingRequest, com.ascend.proto.GreetingResponse>newBuilder()
+              .setType(io.grpc.MethodDescriptor.MethodType.SERVER_STREAMING)
+              .setFullMethodName(generateFullMethodName(SERVICE_NAME, "HelloManyTimes"))
+              .setSampledToLocalTracing(true)
+              .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.ascend.proto.GreetingRequest.getDefaultInstance()))
+              .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.ascend.proto.GreetingResponse.getDefaultInstance()))
+              .setSchemaDescriptor(new GreetingServiceMethodDescriptorSupplier("HelloManyTimes"))
+              .build();
+        }
+      }
+    }
+    return getHelloManyTimesMethod;
+  }
+
+  private static volatile io.grpc.MethodDescriptor<com.ascend.proto.GreetingRequest,
+      com.ascend.proto.GreetingResponse> getLongHelloMethod;
+
+  @io.grpc.stub.annotations.RpcMethod(
+      fullMethodName = SERVICE_NAME + '/' + "LongHello",
+      requestType = com.ascend.proto.GreetingRequest.class,
+      responseType = com.ascend.proto.GreetingResponse.class,
+      methodType = io.grpc.MethodDescriptor.MethodType.CLIENT_STREAMING)
+  public static io.grpc.MethodDescriptor<com.ascend.proto.GreetingRequest,
+      com.ascend.proto.GreetingResponse> getLongHelloMethod() {
+    io.grpc.MethodDescriptor<com.ascend.proto.GreetingRequest, com.ascend.proto.GreetingResponse> getLongHelloMethod;
+    if ((getLongHelloMethod = GreetingServiceGrpc.getLongHelloMethod) == null) {
+      synchronized (GreetingServiceGrpc.class) {
+        if ((getLongHelloMethod = GreetingServiceGrpc.getLongHelloMethod) == null) {
+          GreetingServiceGrpc.getLongHelloMethod = getLongHelloMethod =
+              io.grpc.MethodDescriptor.<com.ascend.proto.GreetingRequest, com.ascend.proto.GreetingResponse>newBuilder()
+              .setType(io.grpc.MethodDescriptor.MethodType.CLIENT_STREAMING)
+              .setFullMethodName(generateFullMethodName(SERVICE_NAME, "LongHello"))
+              .setSampledToLocalTracing(true)
+              .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.ascend.proto.GreetingRequest.getDefaultInstance()))
+              .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.ascend.proto.GreetingResponse.getDefaultInstance()))
+              .setSchemaDescriptor(new GreetingServiceMethodDescriptorSupplier("LongHello"))
+              .build();
+        }
+      }
+    }
+    return getLongHelloMethod;
+  }
+
   /**
    * Creates a new async stub that supports all call types for the service
    */
@@ -130,6 +192,20 @@ public final class GreetingServiceGrpc {
       asyncUnimplementedUnaryCall(getSumMethod(), responseObserver);
     }
 
+    /**
+     */
+    public void helloManyTimes(com.ascend.proto.GreetingRequest request,
+        io.grpc.stub.StreamObserver<com.ascend.proto.GreetingResponse> responseObserver) {
+      asyncUnimplementedUnaryCall(getHelloManyTimesMethod(), responseObserver);
+    }
+
+    /**
+     */
+    public io.grpc.stub.StreamObserver<com.ascend.proto.GreetingRequest> longHello(
+        io.grpc.stub.StreamObserver<com.ascend.proto.GreetingResponse> responseObserver) {
+      return asyncUnimplementedStreamingCall(getLongHelloMethod(), responseObserver);
+    }
+
     @java.lang.Override public final io.grpc.ServerServiceDefinition bindService() {
       return io.grpc.ServerServiceDefinition.builder(getServiceDescriptor())
           .addMethod(
@@ -146,6 +222,20 @@ public final class GreetingServiceGrpc {
                 com.ascend.proto.SumRequest,
                 com.ascend.proto.SumResponse>(
                   this, METHODID_SUM)))
+          .addMethod(
+            getHelloManyTimesMethod(),
+            asyncServerStreamingCall(
+              new MethodHandlers<
+                com.ascend.proto.GreetingRequest,
+                com.ascend.proto.GreetingResponse>(
+                  this, METHODID_HELLO_MANY_TIMES)))
+          .addMethod(
+            getLongHelloMethod(),
+            asyncClientStreamingCall(
+              new MethodHandlers<
+                com.ascend.proto.GreetingRequest,
+                com.ascend.proto.GreetingResponse>(
+                  this, METHODID_LONG_HELLO)))
           .build();
     }
   }
@@ -183,6 +273,22 @@ public final class GreetingServiceGrpc {
       asyncUnaryCall(
           getChannel().newCall(getSumMethod(), getCallOptions()), request, responseObserver);
     }
+
+    /**
+     */
+    public void helloManyTimes(com.ascend.proto.GreetingRequest request,
+        io.grpc.stub.StreamObserver<com.ascend.proto.GreetingResponse> responseObserver) {
+      asyncServerStreamingCall(
+          getChannel().newCall(getHelloManyTimesMethod(), getCallOptions()), request, responseObserver);
+    }
+
+    /**
+     */
+    public io.grpc.stub.StreamObserver<com.ascend.proto.GreetingRequest> longHello(
+        io.grpc.stub.StreamObserver<com.ascend.proto.GreetingResponse> responseObserver) {
+      return asyncClientStreamingCall(
+          getChannel().newCall(getLongHelloMethod(), getCallOptions()), responseObserver);
+    }
   }
 
   /**
@@ -215,6 +321,14 @@ public final class GreetingServiceGrpc {
     public com.ascend.proto.SumResponse sum(com.ascend.proto.SumRequest request) {
       return blockingUnaryCall(
           getChannel(), getSumMethod(), getCallOptions(), request);
+    }
+
+    /**
+     */
+    public java.util.Iterator<com.ascend.proto.GreetingResponse> helloManyTimes(
+        com.ascend.proto.GreetingRequest request) {
+      return blockingServerStreamingCall(
+          getChannel(), getHelloManyTimesMethod(), getCallOptions(), request);
     }
   }
 
@@ -255,6 +369,8 @@ public final class GreetingServiceGrpc {
 
   private static final int METHODID_HELLO = 0;
   private static final int METHODID_SUM = 1;
+  private static final int METHODID_HELLO_MANY_TIMES = 2;
+  private static final int METHODID_LONG_HELLO = 3;
 
   private static final class MethodHandlers<Req, Resp> implements
       io.grpc.stub.ServerCalls.UnaryMethod<Req, Resp>,
@@ -281,6 +397,10 @@ public final class GreetingServiceGrpc {
           serviceImpl.sum((com.ascend.proto.SumRequest) request,
               (io.grpc.stub.StreamObserver<com.ascend.proto.SumResponse>) responseObserver);
           break;
+        case METHODID_HELLO_MANY_TIMES:
+          serviceImpl.helloManyTimes((com.ascend.proto.GreetingRequest) request,
+              (io.grpc.stub.StreamObserver<com.ascend.proto.GreetingResponse>) responseObserver);
+          break;
         default:
           throw new AssertionError();
       }
@@ -291,6 +411,9 @@ public final class GreetingServiceGrpc {
     public io.grpc.stub.StreamObserver<Req> invoke(
         io.grpc.stub.StreamObserver<Resp> responseObserver) {
       switch (methodId) {
+        case METHODID_LONG_HELLO:
+          return (io.grpc.stub.StreamObserver<Req>) serviceImpl.longHello(
+              (io.grpc.stub.StreamObserver<com.ascend.proto.GreetingResponse>) responseObserver);
         default:
           throw new AssertionError();
       }
@@ -344,6 +467,8 @@ public final class GreetingServiceGrpc {
               .setSchemaDescriptor(new GreetingServiceFileDescriptorSupplier())
               .addMethod(getHelloMethod())
               .addMethod(getSumMethod())
+              .addMethod(getHelloManyTimesMethod())
+              .addMethod(getLongHelloMethod())
               .build();
         }
       }

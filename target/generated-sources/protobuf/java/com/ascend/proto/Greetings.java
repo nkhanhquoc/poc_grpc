@@ -61,12 +61,17 @@ public final class Greetings {
       "\n\013firstNumber\030\001 \001(\005\022\025\n\rsecondNumnber\030\002 \001" +
       "(\005\"?\n\nSumRequest\0221\n\nsumElement\030\001 \001(\0132\035.c" +
       "om.ascend.proto.SumElements\"\035\n\013SumRespon" +
-      "se\022\016\n\006result\030\001 \001(\0052\245\001\n\017GreetingService\022N" +
+      "se\022\016\n\006result\030\001 \001(\0052\326\002\n\017GreetingService\022N" +
       "\n\005Hello\022!.com.ascend.proto.GreetingReque" +
       "st\032\".com.ascend.proto.GreetingResponse\022B" +
       "\n\003Sum\022\034.com.ascend.proto.SumRequest\032\035.co" +
-      "m.ascend.proto.SumResponseB\037\n\020com.ascend" +
-      ".protoB\tGreetingsP\001b\006proto3"
+      "m.ascend.proto.SumResponse\022Y\n\016HelloManyT" +
+      "imes\022!.com.ascend.proto.GreetingRequest\032" +
+      "\".com.ascend.proto.GreetingResponse0\001\022T\n" +
+      "\tLongHello\022!.com.ascend.proto.GreetingRe" +
+      "quest\032\".com.ascend.proto.GreetingRespons" +
+      "e(\001B\037\n\020com.ascend.protoB\tGreetingsP\001b\006pr" +
+      "oto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

@@ -33,5 +33,7 @@ message SumResponse {
 service GreetingService {
   rpc Hello(GreetingRequest) returns (GreetingResponse);
   rpc Sum(SumRequest) returns (SumResponse);
+  rpc HelloManyTimes(GreetingRequest) returns (stream GreetingResponse);
+  rpc LongHello(stream GreetingRequest) returns (GreetingResponse);
 }
 
