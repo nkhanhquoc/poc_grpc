@@ -2,6 +2,7 @@ package com.ascend.grpc.server;
 
 import io.grpc.Server;
 import io.grpc.ServerBuilder;
+import java.io.File;
 import java.io.IOException;
 
 public class ServerGrpc {
@@ -11,8 +12,12 @@ public class ServerGrpc {
 
     Server server = ServerBuilder
         .forPort(50051)
+        .useTransportSecurity(
+            new File("ssl/server.crt"),
+            new File("ssl/server.pem"))
         .addService(new GreetServiceImpl())
         .build();
+
     server.start();
 
     System.out.println("GRPC Server has been started.....");

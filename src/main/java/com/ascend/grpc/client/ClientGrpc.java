@@ -4,40 +4,62 @@ import com.ascend.proto.Greeting;
 import com.ascend.proto.GreetingRequest;
 import com.ascend.proto.GreetingResponse;
 import com.ascend.proto.GreetingServiceGrpc;
+import com.ascend.proto.SquareRootRequest;
 import com.ascend.proto.SumElements;
 import com.ascend.proto.SumRequest;
 import com.ascend.proto.SumResponse;
+import io.grpc.Deadline;
 import io.grpc.ManagedChannel;
 import io.grpc.ManagedChannelBuilder;
+import io.grpc.Status;
+import io.grpc.StatusRuntimeException;
+import io.grpc.netty.shaded.io.grpc.netty.GrpcSslContexts;
+import io.grpc.netty.shaded.io.grpc.netty.NettyChannelBuilder;
 import io.grpc.stub.StreamObserver;
+import java.io.File;
 import java.util.Arrays;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.TimeUnit;
+import javax.net.ssl.SSLException;
 
 
 public class ClientGrpc {
   GreetingServiceGrpc.GreetingServiceBlockingStub blockingStub;
   GreetingServiceGrpc.GreetingServiceStub asyncStub;
 
-  public static void main(String[] args) {
+  public static void main(String[] args) throws SSLException {
     System.out.println("this is grpc client");
     ClientGrpc grpc = new ClientGrpc();
     grpc.run();
   }
 
-  public void run(){
-    ManagedChannel channel = ManagedChannelBuilder.forAddress("localhost",50051)
-        .usePlaintext()
+  public void run() throws SSLException {
+//    ManagedChannel channel = ManagedChannelBuilder
+//        .forAddress("localhost",50051)
+//        .useTransportSecurity()
+//        .usePlaintext()
+//        .build();
+    ManagedChannel secureChannel = NettyChannelBuilder
+        .forAddress("localhost",50051)
+        .sslContext(GrpcSslContexts
+            .forClient()
+            .trustManager(new File("ssl/localhost.crt"))
+            .build())
         .build();
-    blockingStub = GreetingServiceGrpc.newBlockingStub(channel);
 
-//    doUnaryCall();
+
+    blockingStub = GreetingServiceGrpc
+        .newBlockingStub(secureChannel);
+
+    doUnaryCall();
 //    doSumElements();
 //    doStreamingServer();
 //    doStreamingClient(channel);
-      doBiDiStreaming(channel);
+//      doBiDiStreaming(channel);
+//    doCallError();
+    doCallWithDeadline();
     System.out.println("shutting down channel");
-    channel.shutdown();
+    secureChannel.shutdown();
     //channel
   }
 
@@ -185,4 +207,38 @@ public class ClientGrpc {
       e.printStackTrace();
     }
   }
+
+  private void doCallError(){
+    SquareRootRequest request = SquareRootRequest.newBuilder()
+        .setNumber(-1)
+        .build();
+    try{
+      blockingStub.squareRoot(request);
+    }catch (RuntimeException e){
+      System.out.println("An error encountered");
+      e.printStackTrace();
+    }
+  }
+
+  private void doCallWithDeadline(){
+    try {
+      Deadline deadline = Deadline.after(7000, TimeUnit.MILLISECONDS);
+      GreetingResponse response = blockingStub.withDeadline(deadline)
+          .helloWithDeadline(GreetingRequest.newBuilder()
+              .setGreeting(Greeting.newBuilder()
+                  .setGreeting("Khanh")
+                  .build())
+              .build());
+
+      System.out.println(response.getResult());
+    } catch(StatusRuntimeException e){
+      if(e.getStatus() == Status.DEADLINE_EXCEEDED){
+        System.out.println("deadline exceeded");
+      } else {
+        e.printStackTrace();
+      }
+    }
+  }
+
+
 }

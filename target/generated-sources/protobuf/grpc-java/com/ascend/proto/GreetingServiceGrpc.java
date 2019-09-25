@@ -182,6 +182,68 @@ public final class GreetingServiceGrpc {
     return getHelloEveryoneMethod;
   }
 
+  private static volatile io.grpc.MethodDescriptor<com.ascend.proto.SquareRootRequest,
+      com.ascend.proto.SquareRootResponse> getSquareRootMethod;
+
+  @io.grpc.stub.annotations.RpcMethod(
+      fullMethodName = SERVICE_NAME + '/' + "SquareRoot",
+      requestType = com.ascend.proto.SquareRootRequest.class,
+      responseType = com.ascend.proto.SquareRootResponse.class,
+      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  public static io.grpc.MethodDescriptor<com.ascend.proto.SquareRootRequest,
+      com.ascend.proto.SquareRootResponse> getSquareRootMethod() {
+    io.grpc.MethodDescriptor<com.ascend.proto.SquareRootRequest, com.ascend.proto.SquareRootResponse> getSquareRootMethod;
+    if ((getSquareRootMethod = GreetingServiceGrpc.getSquareRootMethod) == null) {
+      synchronized (GreetingServiceGrpc.class) {
+        if ((getSquareRootMethod = GreetingServiceGrpc.getSquareRootMethod) == null) {
+          GreetingServiceGrpc.getSquareRootMethod = getSquareRootMethod =
+              io.grpc.MethodDescriptor.<com.ascend.proto.SquareRootRequest, com.ascend.proto.SquareRootResponse>newBuilder()
+              .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
+              .setFullMethodName(generateFullMethodName(SERVICE_NAME, "SquareRoot"))
+              .setSampledToLocalTracing(true)
+              .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.ascend.proto.SquareRootRequest.getDefaultInstance()))
+              .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.ascend.proto.SquareRootResponse.getDefaultInstance()))
+              .setSchemaDescriptor(new GreetingServiceMethodDescriptorSupplier("SquareRoot"))
+              .build();
+        }
+      }
+    }
+    return getSquareRootMethod;
+  }
+
+  private static volatile io.grpc.MethodDescriptor<com.ascend.proto.GreetingRequest,
+      com.ascend.proto.GreetingResponse> getHelloWithDeadlineMethod;
+
+  @io.grpc.stub.annotations.RpcMethod(
+      fullMethodName = SERVICE_NAME + '/' + "HelloWithDeadline",
+      requestType = com.ascend.proto.GreetingRequest.class,
+      responseType = com.ascend.proto.GreetingResponse.class,
+      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  public static io.grpc.MethodDescriptor<com.ascend.proto.GreetingRequest,
+      com.ascend.proto.GreetingResponse> getHelloWithDeadlineMethod() {
+    io.grpc.MethodDescriptor<com.ascend.proto.GreetingRequest, com.ascend.proto.GreetingResponse> getHelloWithDeadlineMethod;
+    if ((getHelloWithDeadlineMethod = GreetingServiceGrpc.getHelloWithDeadlineMethod) == null) {
+      synchronized (GreetingServiceGrpc.class) {
+        if ((getHelloWithDeadlineMethod = GreetingServiceGrpc.getHelloWithDeadlineMethod) == null) {
+          GreetingServiceGrpc.getHelloWithDeadlineMethod = getHelloWithDeadlineMethod =
+              io.grpc.MethodDescriptor.<com.ascend.proto.GreetingRequest, com.ascend.proto.GreetingResponse>newBuilder()
+              .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
+              .setFullMethodName(generateFullMethodName(SERVICE_NAME, "HelloWithDeadline"))
+              .setSampledToLocalTracing(true)
+              .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.ascend.proto.GreetingRequest.getDefaultInstance()))
+              .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.ascend.proto.GreetingResponse.getDefaultInstance()))
+              .setSchemaDescriptor(new GreetingServiceMethodDescriptorSupplier("HelloWithDeadline"))
+              .build();
+        }
+      }
+    }
+    return getHelloWithDeadlineMethod;
+  }
+
   /**
    * Creates a new async stub that supports all call types for the service
    */
@@ -244,6 +306,20 @@ public final class GreetingServiceGrpc {
       return asyncUnimplementedStreamingCall(getHelloEveryoneMethod(), responseObserver);
     }
 
+    /**
+     */
+    public void squareRoot(com.ascend.proto.SquareRootRequest request,
+        io.grpc.stub.StreamObserver<com.ascend.proto.SquareRootResponse> responseObserver) {
+      asyncUnimplementedUnaryCall(getSquareRootMethod(), responseObserver);
+    }
+
+    /**
+     */
+    public void helloWithDeadline(com.ascend.proto.GreetingRequest request,
+        io.grpc.stub.StreamObserver<com.ascend.proto.GreetingResponse> responseObserver) {
+      asyncUnimplementedUnaryCall(getHelloWithDeadlineMethod(), responseObserver);
+    }
+
     @java.lang.Override public final io.grpc.ServerServiceDefinition bindService() {
       return io.grpc.ServerServiceDefinition.builder(getServiceDescriptor())
           .addMethod(
@@ -281,6 +357,20 @@ public final class GreetingServiceGrpc {
                 com.ascend.proto.GreetingRequest,
                 com.ascend.proto.GreetingResponse>(
                   this, METHODID_HELLO_EVERYONE)))
+          .addMethod(
+            getSquareRootMethod(),
+            asyncUnaryCall(
+              new MethodHandlers<
+                com.ascend.proto.SquareRootRequest,
+                com.ascend.proto.SquareRootResponse>(
+                  this, METHODID_SQUARE_ROOT)))
+          .addMethod(
+            getHelloWithDeadlineMethod(),
+            asyncUnaryCall(
+              new MethodHandlers<
+                com.ascend.proto.GreetingRequest,
+                com.ascend.proto.GreetingResponse>(
+                  this, METHODID_HELLO_WITH_DEADLINE)))
           .build();
     }
   }
@@ -342,6 +432,22 @@ public final class GreetingServiceGrpc {
       return asyncBidiStreamingCall(
           getChannel().newCall(getHelloEveryoneMethod(), getCallOptions()), responseObserver);
     }
+
+    /**
+     */
+    public void squareRoot(com.ascend.proto.SquareRootRequest request,
+        io.grpc.stub.StreamObserver<com.ascend.proto.SquareRootResponse> responseObserver) {
+      asyncUnaryCall(
+          getChannel().newCall(getSquareRootMethod(), getCallOptions()), request, responseObserver);
+    }
+
+    /**
+     */
+    public void helloWithDeadline(com.ascend.proto.GreetingRequest request,
+        io.grpc.stub.StreamObserver<com.ascend.proto.GreetingResponse> responseObserver) {
+      asyncUnaryCall(
+          getChannel().newCall(getHelloWithDeadlineMethod(), getCallOptions()), request, responseObserver);
+    }
   }
 
   /**
@@ -383,6 +489,20 @@ public final class GreetingServiceGrpc {
       return blockingServerStreamingCall(
           getChannel(), getHelloManyTimesMethod(), getCallOptions(), request);
     }
+
+    /**
+     */
+    public com.ascend.proto.SquareRootResponse squareRoot(com.ascend.proto.SquareRootRequest request) {
+      return blockingUnaryCall(
+          getChannel(), getSquareRootMethod(), getCallOptions(), request);
+    }
+
+    /**
+     */
+    public com.ascend.proto.GreetingResponse helloWithDeadline(com.ascend.proto.GreetingRequest request) {
+      return blockingUnaryCall(
+          getChannel(), getHelloWithDeadlineMethod(), getCallOptions(), request);
+    }
   }
 
   /**
@@ -418,13 +538,31 @@ public final class GreetingServiceGrpc {
       return futureUnaryCall(
           getChannel().newCall(getSumMethod(), getCallOptions()), request);
     }
+
+    /**
+     */
+    public com.google.common.util.concurrent.ListenableFuture<com.ascend.proto.SquareRootResponse> squareRoot(
+        com.ascend.proto.SquareRootRequest request) {
+      return futureUnaryCall(
+          getChannel().newCall(getSquareRootMethod(), getCallOptions()), request);
+    }
+
+    /**
+     */
+    public com.google.common.util.concurrent.ListenableFuture<com.ascend.proto.GreetingResponse> helloWithDeadline(
+        com.ascend.proto.GreetingRequest request) {
+      return futureUnaryCall(
+          getChannel().newCall(getHelloWithDeadlineMethod(), getCallOptions()), request);
+    }
   }
 
   private static final int METHODID_HELLO = 0;
   private static final int METHODID_SUM = 1;
   private static final int METHODID_HELLO_MANY_TIMES = 2;
-  private static final int METHODID_LONG_HELLO = 3;
-  private static final int METHODID_HELLO_EVERYONE = 4;
+  private static final int METHODID_SQUARE_ROOT = 3;
+  private static final int METHODID_HELLO_WITH_DEADLINE = 4;
+  private static final int METHODID_LONG_HELLO = 5;
+  private static final int METHODID_HELLO_EVERYONE = 6;
 
   private static final class MethodHandlers<Req, Resp> implements
       io.grpc.stub.ServerCalls.UnaryMethod<Req, Resp>,
@@ -453,6 +591,14 @@ public final class GreetingServiceGrpc {
           break;
         case METHODID_HELLO_MANY_TIMES:
           serviceImpl.helloManyTimes((com.ascend.proto.GreetingRequest) request,
+              (io.grpc.stub.StreamObserver<com.ascend.proto.GreetingResponse>) responseObserver);
+          break;
+        case METHODID_SQUARE_ROOT:
+          serviceImpl.squareRoot((com.ascend.proto.SquareRootRequest) request,
+              (io.grpc.stub.StreamObserver<com.ascend.proto.SquareRootResponse>) responseObserver);
+          break;
+        case METHODID_HELLO_WITH_DEADLINE:
+          serviceImpl.helloWithDeadline((com.ascend.proto.GreetingRequest) request,
               (io.grpc.stub.StreamObserver<com.ascend.proto.GreetingResponse>) responseObserver);
           break;
         default:
@@ -527,6 +673,8 @@ public final class GreetingServiceGrpc {
               .addMethod(getHelloManyTimesMethod())
               .addMethod(getLongHelloMethod())
               .addMethod(getHelloEveryoneMethod())
+              .addMethod(getSquareRootMethod())
+              .addMethod(getHelloWithDeadlineMethod())
               .build();
         }
       }

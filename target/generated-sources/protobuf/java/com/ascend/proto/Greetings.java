@@ -44,6 +44,16 @@ public final class Greetings {
   static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_com_ascend_proto_SumResponse_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_com_ascend_proto_SquareRootRequest_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_com_ascend_proto_SquareRootRequest_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_com_ascend_proto_SquareRootResponse_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_com_ascend_proto_SquareRootResponse_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -61,17 +71,23 @@ public final class Greetings {
       "\n\013firstNumber\030\001 \001(\005\022\025\n\rsecondNumnber\030\002 \001" +
       "(\005\"?\n\nSumRequest\0221\n\nsumElement\030\001 \001(\0132\035.c" +
       "om.ascend.proto.SumElements\"\035\n\013SumRespon" +
-      "se\022\016\n\006result\030\001 \001(\0052\326\002\n\017GreetingService\022N" +
-      "\n\005Hello\022!.com.ascend.proto.GreetingReque" +
-      "st\032\".com.ascend.proto.GreetingResponse\022B" +
-      "\n\003Sum\022\034.com.ascend.proto.SumRequest\032\035.co" +
-      "m.ascend.proto.SumResponse\022Y\n\016HelloManyT" +
-      "imes\022!.com.ascend.proto.GreetingRequest\032" +
-      "\".com.ascend.proto.GreetingResponse0\001\022T\n" +
-      "\tLongHello\022!.com.ascend.proto.GreetingRe" +
-      "quest\032\".com.ascend.proto.GreetingRespons" +
-      "e(\001B\037\n\020com.ascend.protoB\tGreetingsP\001b\006pr" +
-      "oto3"
+      "se\022\016\n\006result\030\001 \001(\005\"#\n\021SquareRootRequest\022" +
+      "\016\n\006number\030\001 \001(\005\"\"\n\022SquareRootResponse\022\014\n" +
+      "\004root\030\001 \001(\0012\213\004\n\017GreetingService\022N\n\005Hello" +
+      "\022!.com.ascend.proto.GreetingRequest\032\".co" +
+      "m.ascend.proto.GreetingResponse\022B\n\003Sum\022\034" +
+      ".com.ascend.proto.SumRequest\032\035.com.ascen" +
+      "d.proto.SumResponse\022Y\n\016HelloManyTimes\022!." +
+      "com.ascend.proto.GreetingRequest\032\".com.a" +
+      "scend.proto.GreetingResponse0\001\022T\n\tLongHe" +
+      "llo\022!.com.ascend.proto.GreetingRequest\032\"" +
+      ".com.ascend.proto.GreetingResponse(\001\022Z\n\r" +
+      "HelloEveryone\022!.com.ascend.proto.Greetin" +
+      "gRequest\032\".com.ascend.proto.GreetingResp" +
+      "onse(\0010\001\022W\n\nSquareRoot\022#.com.ascend.prot" +
+      "o.SquareRootRequest\032$.com.ascend.proto.S" +
+      "quareRootResponseB\037\n\020com.ascend.protoB\tG" +
+      "reetingsP\001b\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -113,6 +129,18 @@ public final class Greetings {
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_com_ascend_proto_SumResponse_descriptor,
         new java.lang.String[] { "Result", });
+    internal_static_com_ascend_proto_SquareRootRequest_descriptor =
+      getDescriptor().getMessageTypes().get(6);
+    internal_static_com_ascend_proto_SquareRootRequest_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_com_ascend_proto_SquareRootRequest_descriptor,
+        new java.lang.String[] { "Number", });
+    internal_static_com_ascend_proto_SquareRootResponse_descriptor =
+      getDescriptor().getMessageTypes().get(7);
+    internal_static_com_ascend_proto_SquareRootResponse_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_com_ascend_proto_SquareRootResponse_descriptor,
+        new java.lang.String[] { "Root", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)
