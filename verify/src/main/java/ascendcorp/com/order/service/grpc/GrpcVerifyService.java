@@ -38,7 +38,7 @@ public class GrpcVerifyService extends VerifyServiceGrpc.VerifyServiceImplBase {
   }
 
   @Override
-  @PreAuthorize("hasRole('ADMIN')")
+  @PreAuthorize("hasRole('USER')")
   public void verifyOrder(OrderRequest request, StreamObserver<OrderResponse> responseObserver) {
 
     String orderId = request.getOrderId();
