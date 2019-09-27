@@ -50,8 +50,10 @@ public class ExceptionTranslationInterceptor implements ServerInterceptor {
 
             if (Objects.nonNull(accessDeniedException)) {
               handleAccessDeniedException(accessDeniedException);
-            } else {
-              throw e;
+            }
+            else {
+              serverCall.close(Status.UNKNOWN.withDescription(e.getMessage())
+                .withCause(e), new Metadata());
             }
           }
         }
