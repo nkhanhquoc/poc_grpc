@@ -1,79 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/main/java/com/ascend/grpc/client/ClientGrpc.java" />
-  </component>
   <component name="ChangeListManager">
     <list default="true" id="60a88cdc-4d56-47fb-9049-2b7d3fb5a74f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ascend/grpc/client/ClientGrpc$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ascend/grpc/client/ClientGrpc$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ascend/grpc/client/ClientGrpc$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ascend/grpc/client/ClientGrpc$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ascend/grpc/client/ClientGrpc.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ascend/grpc/client/ClientGrpc.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ascend/grpc/server/GreetServiceImpl$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ascend/grpc/server/GreetServiceImpl$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ascend/grpc/server/GreetServiceImpl$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ascend/grpc/server/GreetServiceImpl$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ascend/grpc/server/GreetServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ascend/grpc/server/GreetServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ascend/grpc/server/ServerGrpc.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ascend/grpc/server/ServerGrpc.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ascend/proto/GreetingServiceGrpc$GreetingServiceBaseDescriptorSupplier.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ascend/proto/GreetingServiceGrpc$GreetingServiceBaseDescriptorSupplier.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ascend/proto/GreetingServiceGrpc$GreetingServiceBlockingStub.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ascend/proto/GreetingServiceGrpc$GreetingServiceBlockingStub.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ascend/proto/GreetingServiceGrpc$GreetingServiceFileDescriptorSupplier.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ascend/proto/GreetingServiceGrpc$GreetingServiceFileDescriptorSupplier.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ascend/proto/GreetingServiceGrpc$GreetingServiceFutureStub.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ascend/proto/GreetingServiceGrpc$GreetingServiceFutureStub.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ascend/proto/GreetingServiceGrpc$GreetingServiceImplBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ascend/proto/GreetingServiceGrpc$GreetingServiceImplBase.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ascend/proto/GreetingServiceGrpc$GreetingServiceMethodDescriptorSupplier.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ascend/proto/GreetingServiceGrpc$GreetingServiceMethodDescriptorSupplier.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ascend/proto/GreetingServiceGrpc$GreetingServiceStub.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ascend/proto/GreetingServiceGrpc$GreetingServiceStub.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ascend/proto/GreetingServiceGrpc$MethodHandlers.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ascend/proto/GreetingServiceGrpc$MethodHandlers.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ascend/proto/GreetingServiceGrpc.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ascend/proto/GreetingServiceGrpc.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ascend/proto/Greetings.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ascend/proto/Greetings.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/0982f410a49d87ba221445c8ca2f06e2/google/protobuf/compiler/plugin.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/0982f410a49d87ba221445c8ca2f06e2/google/protobuf/descriptor.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/0982f410a49d87ba221445c8ca2f06e2/google/protobuf/duration.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/0982f410a49d87ba221445c8ca2f06e2/google/protobuf/empty.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/0982f410a49d87ba221445c8ca2f06e2/google/protobuf/field_mask.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/0982f410a49d87ba221445c8ca2f06e2/google/protobuf/source_context.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/0982f410a49d87ba221445c8ca2f06e2/google/protobuf/struct.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/0982f410a49d87ba221445c8ca2f06e2/google/protobuf/timestamp.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/0982f410a49d87ba221445c8ca2f06e2/google/protobuf/type.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/0982f410a49d87ba221445c8ca2f06e2/google/protobuf/wrappers.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/ec3ccb60468ea4a9ca16bed493fcac0f/google/api/annotations.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/ec3ccb60468ea4a9ca16bed493fcac0f/google/api/auth.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/ec3ccb60468ea4a9ca16bed493fcac0f/google/api/backend.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/ec3ccb60468ea4a9ca16bed493fcac0f/google/api/billing.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/ec3ccb60468ea4a9ca16bed493fcac0f/google/api/config_change.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/ec3ccb60468ea4a9ca16bed493fcac0f/google/api/consumer.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/ec3ccb60468ea4a9ca16bed493fcac0f/google/api/context.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/ec3ccb60468ea4a9ca16bed493fcac0f/google/api/control.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/ec3ccb60468ea4a9ca16bed493fcac0f/google/api/distribution.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/ec3ccb60468ea4a9ca16bed493fcac0f/google/api/documentation.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/ec3ccb60468ea4a9ca16bed493fcac0f/google/api/endpoint.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/ec3ccb60468ea4a9ca16bed493fcac0f/google/api/experimental/authorization_config.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/ec3ccb60468ea4a9ca16bed493fcac0f/google/api/experimental/experimental.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/ec3ccb60468ea4a9ca16bed493fcac0f/google/api/http.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/ec3ccb60468ea4a9ca16bed493fcac0f/google/api/httpbody.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/ec3ccb60468ea4a9ca16bed493fcac0f/google/api/label.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/ec3ccb60468ea4a9ca16bed493fcac0f/google/api/log.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/ec3ccb60468ea4a9ca16bed493fcac0f/google/api/logging.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/ec3ccb60468ea4a9ca16bed493fcac0f/google/api/metric.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/ec3ccb60468ea4a9ca16bed493fcac0f/google/api/monitored_resource.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/ec3ccb60468ea4a9ca16bed493fcac0f/google/api/monitoring.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/ec3ccb60468ea4a9ca16bed493fcac0f/google/api/quota.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/ec3ccb60468ea4a9ca16bed493fcac0f/google/api/service.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/ec3ccb60468ea4a9ca16bed493fcac0f/google/api/source_info.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/ec3ccb60468ea4a9ca16bed493fcac0f/google/api/system_parameter.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/ec3ccb60468ea4a9ca16bed493fcac0f/google/api/usage.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/ec3ccb60468ea4a9ca16bed493fcac0f/google/cloud/audit/audit_log.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/ec3ccb60468ea4a9ca16bed493fcac0f/google/logging/type/http_request.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/ec3ccb60468ea4a9ca16bed493fcac0f/google/logging/type/log_severity.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/ec3ccb60468ea4a9ca16bed493fcac0f/google/longrunning/operations.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/ec3ccb60468ea4a9ca16bed493fcac0f/google/rpc/code.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/ec3ccb60468ea4a9ca16bed493fcac0f/google/rpc/error_details.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/ec3ccb60468ea4a9ca16bed493fcac0f/google/rpc/status.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/ec3ccb60468ea4a9ca16bed493fcac0f/google/type/color.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/ec3ccb60468ea4a9ca16bed493fcac0f/google/type/date.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/ec3ccb60468ea4a9ca16bed493fcac0f/google/type/dayofweek.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/ec3ccb60468ea4a9ca16bed493fcac0f/google/type/latlng.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/ec3ccb60468ea4a9ca16bed493fcac0f/google/type/money.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/ec3ccb60468ea4a9ca16bed493fcac0f/google/type/postal_address.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/ec3ccb60468ea4a9ca16bed493fcac0f/google/type/timeofday.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/4/048a0978465e5a51d74d3013eb0d9029f86b3806" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/f/0f2418d66d9ef8d0072c3d15efe1a0375ae3b094" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/c/1c2b64a3d5a126b462f41c655049ef4dd4565d0f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/6/26b4a247d9c4c2fd07c968a1bf58fb9698a485a4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/7/370bde38a0650e5f2bba07ff9ca789cde955f236" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/4/442292b8a7efeabbe4cc176709b833b1792140ec" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/8/8827a39e9df937697897bc8ef556934bd480aaa7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/b/8bef069708e44e872305e1a595eb8d274e6a9a25" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/1/918640cb5ba92a5a204834215fc49a7a01cf8fc9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/2/b23087070eb9d039f149f3267c7e9a00cae9bd56" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/a/da68deda552c6e2e115815190fa8ca88ec937a66" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/c/dce410bc6d40e4c85826177bdf355da7a98ba013" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/c/fcb85d03eb8329492ca49a54ac5933bcaee45097" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -87,110 +29,7 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="38" column="16" lean-forward="true" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/proto/com/ascend/proto/greetings.proto">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="634">
-              <caret line="46" column="68" selection-start-line="46" selection-start-column="68" selection-end-line="46" selection-end-column="68" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/target/generated-sources/protobuf/java/com/ascend/proto/Greetings.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ascend/grpc/server/GreetServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="333">
-              <caret line="36" column="35" lean-forward="true" selection-start-line="36" selection-start-column="35" selection-end-line="36" selection-end-column="35" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#3139#3140#0" expanded="true" />
-                <element signature="e#3187#3188#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/target/generated-sources/protobuf/java/com/ascend/proto/Greeting.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ascend/grpc/server/ServerGrpc.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/io/grpc/grpc-api/1.23.0/grpc-api-1.23.0.jar!/io/grpc/ServerBuilder.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="48" column="14" lean-forward="true" selection-start-line="48" selection-start-column="14" selection-end-line="48" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ascend/grpc/client/ClientGrpc.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="59" column="25" lean-forward="true" selection-start-line="59" selection-start-column="25" selection-end-line="59" selection-end-column="25" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#doBiDiStreaming#0;class#ClientGrpc#0" />
-                <element signature="method#doUnaryCall#0;class#ClientGrpc#0" />
-                <element signature="method#doSumElements#0;class#ClientGrpc#0" />
-                <element signature="method#doStreamingServer#0;class#ClientGrpc#0" />
-                <element signature="method#doStreamingClient#0;class#ClientGrpc#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/target/generated-sources/protobuf/grpc-java/com/ascend/proto/GreetingServiceGrpc.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="216" column="61" selection-start-line="216" selection-start-column="53" selection-end-line="216" selection-end-column="61" />
-              <folding>
-                <element signature="e#3908#3967#0" expanded="true" />
-                <element signature="e#5698#5767#0" expanded="true" />
-                <element signature="e#9329#9398#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -255,10 +94,12 @@
       <select />
     </treeState>
   </component>
+  <component name="PhpServers">
+    <servers />
+  </component>
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="y" value="23" />
     <option name="width" value="1440" />
-    <option name="height" value="823" />
+    <option name="height" value="900" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -269,7 +110,6 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -280,54 +120,63 @@
             <path>
               <item name="poc_grpc" type="b2602c69:ProjectViewProjectNode" />
               <item name="poc_grpc" type="462c0819:PsiDirectoryNode" />
+              <item name="order" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="poc_grpc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="poc_grpc" type="462c0819:PsiDirectoryNode" />
+              <item name="order" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="poc_grpc" type="b2602c69:ProjectViewProjectNode" />
               <item name="poc_grpc" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="poc_grpc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="poc_grpc" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="poc_grpc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="poc_grpc" type="462c0819:PsiDirectoryNode" />
+              <item name="order" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="grpc" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="poc_grpc" type="b2602c69:ProjectViewProjectNode" />
               <item name="poc_grpc" type="462c0819:PsiDirectoryNode" />
+              <item name="order" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="grpc" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="poc_grpc" type="b2602c69:ProjectViewProjectNode" />
               <item name="poc_grpc" type="462c0819:PsiDirectoryNode" />
+              <item name="order" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="grpc" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="ascendcorp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="poc_grpc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="poc_grpc" type="462c0819:PsiDirectoryNode" />
+              <item name="order" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ascendcorp" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="poc_grpc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="poc_grpc" type="462c0819:PsiDirectoryNode" />
+              <item name="order" type="462c0819:PsiDirectoryNode" />
+              <item name="ssl" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="ExpandSpringBootJavaOptionsPanel" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -471,6 +320,7 @@
       <workItem from="1568564869728" duration="6986000" />
       <workItem from="1568599315216" duration="5282000" />
       <workItem from="1568793778623" duration="17785000" />
+      <workItem from="1569558273555" duration="140000" />
     </task>
     <task id="LOCAL-00001" summary="update ssl">
       <created>1569385987014</created>
@@ -483,13 +333,12 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39194000" />
+    <option name="totallyTimeSpent" value="39334000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22317597" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22603719" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -543,58 +392,11 @@
     <entry file="file://$PROJECT_DIR$/target/generated-sources/protobuf/java/com/ascend/proto/Foo.java" />
     <entry file="file://$PROJECT_DIR$/src/main/proto/com/ascend/proto/sum.proto" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_212/src.zip!/java/util/concurrent/CountDownLatch.java" />
-    <entry file="file://$PROJECT_DIR$/target/generated-sources/protobuf/java/com/ascend/proto/Greetings.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/generated-sources/protobuf/java/com/ascend/proto/Greeting.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/generated-sources/protobuf/grpc-java/com/ascend/proto/GreetingServiceGrpc.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="216" column="61" selection-start-line="216" selection-start-column="53" selection-end-line="216" selection-end-column="61" />
-          <folding>
-            <element signature="e#3908#3967#0" expanded="true" />
-            <element signature="e#5698#5767#0" expanded="true" />
-            <element signature="e#9329#9398#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/proto/com/ascend/proto/greetings.proto">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="634">
-          <caret line="46" column="68" selection-start-line="46" selection-start-column="68" selection-end-line="46" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/grpc/grpc-api/1.23.0/grpc-api-1.23.0.jar!/io/grpc/ServerBuilder.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="48" column="14" lean-forward="true" selection-start-line="48" selection-start-column="14" selection-end-line="48" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ascend/grpc/server/GreetServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="36" column="35" lean-forward="true" selection-start-line="36" selection-start-column="35" selection-end-line="36" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3139#3140#0" expanded="true" />
-            <element signature="e#3187#3188#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/target/generated-sources/protobuf/java/com/ascend/proto/Greetings.java" />
+    <entry file="file://$PROJECT_DIR$/target/generated-sources/protobuf/java/com/ascend/proto/Greeting.java" />
+    <entry file="file://$PROJECT_DIR$/target/generated-sources/protobuf/grpc-java/com/ascend/proto/GreetingServiceGrpc.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/proto/com/ascend/proto/greetings.proto" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ascend/grpc/server/GreetServiceImpl.java" />
     <entry file="jar://$MAVEN_REPOSITORY$/io/grpc/grpc-api/1.23.0/grpc-api-1.23.0.jar!/io/grpc/ManagedChannelBuilder.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1500">
@@ -606,35 +408,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/pom.xml" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ascend/grpc/server/ServerGrpc.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ascend/grpc/client/ClientGrpc.java" />
+    <entry file="jar://$MAVEN_REPOSITORY$/io/grpc/grpc-api/1.23.0/grpc-api-1.23.0.jar!/io/grpc/ServerBuilder.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="38" column="16" lean-forward="true" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ascend/grpc/server/ServerGrpc.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ascend/grpc/client/ClientGrpc.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="59" column="25" lean-forward="true" selection-start-line="59" selection-start-column="25" selection-end-line="59" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#doBiDiStreaming#0;class#ClientGrpc#0" />
-            <element signature="method#doUnaryCall#0;class#ClientGrpc#0" />
-            <element signature="method#doSumElements#0;class#ClientGrpc#0" />
-            <element signature="method#doStreamingServer#0;class#ClientGrpc#0" />
-            <element signature="method#doStreamingClient#0;class#ClientGrpc#0" />
-          </folding>
+        <state relative-caret-position="38">
+          <caret line="5" column="16" lean-forward="true" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
         </state>
       </provider>
     </entry>

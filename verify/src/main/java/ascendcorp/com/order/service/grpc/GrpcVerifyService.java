@@ -12,7 +12,6 @@ import ascendcorp.com.order.model.Order;
 import ascendcorp.com.order.model.VerifyOrder;
 import ascendcorp.com.order.repository.OrderRepository;
 import ascendcorp.com.order.repository.VerifyOrderRepository;
-import ascendcorp.com.order.service.stream.OrderListener;
 import io.grpc.stub.StreamObserver;
 import org.lognet.springboot.grpc.GRpcService;
 import org.springframework.security.access.prepost.PreAuthorize;
@@ -20,7 +19,7 @@ import org.springframework.security.access.prepost.PreAuthorize;
 @GRpcService
 public class GrpcVerifyService extends VerifyServiceGrpc.VerifyServiceImplBase {
 
-  private static final Logger logger = Logger.getInstance(OrderListener.class);
+  private static final Logger logger = Logger.getInstance(GrpcVerifyService.class);
 
   private VerifyOrderRepository verifyOrderRepository;
   private OrderRepository orderRepository;

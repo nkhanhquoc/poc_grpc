@@ -3,7 +3,6 @@ package ascendcorp.com.order.service.grpc.interceptor;
 import static com.google.common.base.Strings.nullToEmpty;
 
 import ascendcorp.com.order.logger.Logger;
-import ascendcorp.com.order.service.stream.OrderListener;
 import io.grpc.Metadata;
 import io.grpc.ServerCall;
 import io.grpc.ServerCall.Listener;
@@ -27,7 +26,7 @@ import org.springframework.security.core.context.SecurityContextHolder;
 public class BasicInterceptor implements ServerInterceptor {
 
 private final AuthenticationManager authenticationManager;
-  private static final Logger log = Logger.getInstance(OrderListener.class);
+  private static final Logger log = Logger.getInstance(BasicInterceptor.class);
 
   @Autowired
   public BasicInterceptor(
