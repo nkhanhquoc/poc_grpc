@@ -1,0 +1,18 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: order
+  datasource:
+    url: jdbc:mysql://localhost:3306/test_springboot_stream?useUnicode=yes&characterEncoding=UTF-8
+    username: root
+    password: Welcome1
+    driver-class-name: com.mysql.jdbc.Driver
+  jpa:
+    show-sql: true
+  redis:
+    host: localhost
+    port: 6379
+grpc:
+  security:
+    cert-chain: file:ssl/localhost.crt
