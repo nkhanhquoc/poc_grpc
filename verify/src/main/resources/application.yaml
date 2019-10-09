@@ -3,6 +3,9 @@ server:
 spring:
   application:
     name: order_verify
+  sleuth:
+    sampler:
+      probability: 1.0
   cloud:
     stream:
       kafka:

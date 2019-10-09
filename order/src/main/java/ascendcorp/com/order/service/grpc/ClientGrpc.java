@@ -9,6 +9,7 @@ import ascendcorp.com.order.logger.Logger;
 import ascendcorp.com.order.service.grpc.credentials.JwtCallCredential;
 import ascendcorp.com.order.service.grpc.interceptor.ClientBasicAuthInterceptor;
 import ascendcorp.com.order.service.grpc.interceptor.ClientOAuth2Interceptor;
+import brave.grpc.GrpcTracing;
 import io.grpc.ManagedChannel;
 import io.grpc.Metadata;
 import io.grpc.netty.GrpcSslContexts;
@@ -34,10 +35,11 @@ public class ClientGrpc{
   ManagedChannel channel;
 
 
-  public ClientGrpc(GRpcServerProperties grpcServerProperties) throws IOException {
+  public ClientGrpc(GRpcServerProperties grpcServerProperties, GrpcTracing grpcTracing) throws IOException {
 
     this.channel = NettyChannelBuilder.
         forAddress("localhost",50051)
+        .intercept(grpcTracing.newClientInterceptor())
         .sslContext(
             GrpcSslContexts
                 .forClient()
