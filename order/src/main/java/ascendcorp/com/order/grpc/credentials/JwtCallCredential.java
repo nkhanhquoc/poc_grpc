@@ -1,4 +1,4 @@
-package ascendcorp.com.order.service.grpc.credentials;
+package ascendcorp.com.order.grpc.credentials;
 
 import ascendcorp.com.order.constant.JwtConstants;
 import io.grpc.CallCredentials;

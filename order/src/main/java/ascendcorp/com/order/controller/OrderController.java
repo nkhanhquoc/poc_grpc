@@ -3,7 +3,7 @@ package ascendcorp.com.order.controller;
 import ascendcorp.com.order.GrpcOrder;
 import ascendcorp.com.order.logger.Logger;
 import ascendcorp.com.order.model.Order;
-import ascendcorp.com.order.service.grpc.ClientGrpc;
+import ascendcorp.com.order.grpc.ClientGrpc;
 import ascendcorp.com.order.ulti.ResponseFactory;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;

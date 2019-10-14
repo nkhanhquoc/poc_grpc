@@ -1,4 +1,4 @@
-package ascendcorp.com.order.service.grpc.interceptor;
+package ascendcorp.com.order.grpc.interceptor;
 
 import io.grpc.CallOptions;
 import io.grpc.Channel;
@@ -7,7 +7,6 @@ import io.grpc.ClientInterceptor;
 import io.grpc.ForwardingClientCall.SimpleForwardingClientCall;
 import io.grpc.Metadata;
 import io.grpc.MethodDescriptor;
-import org.lognet.springboot.grpc.GRpcGlobalInterceptor;
 
 //@GRpcGlobalInterceptor
 public class ClientBasicAuthInterceptor implements ClientInterceptor {

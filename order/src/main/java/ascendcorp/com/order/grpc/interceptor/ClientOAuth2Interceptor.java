@@ -1,4 +1,4 @@
-package ascendcorp.com.order.service.grpc.interceptor;
+package ascendcorp.com.order.grpc.interceptor;
 
 import io.grpc.CallOptions;
 import io.grpc.Channel;

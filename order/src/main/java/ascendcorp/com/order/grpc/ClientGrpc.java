@@ -1,4 +1,4 @@
-package ascendcorp.com.order.service.grpc;
+package ascendcorp.com.order.grpc;
 
 import ascendcorp.com.order.GrpcOrder;
 import ascendcorp.com.order.OrderRequest;
@@ -6,9 +6,9 @@ import ascendcorp.com.order.OrderResponse;
 import ascendcorp.com.order.VerifyServiceGrpc;
 import ascendcorp.com.order.constant.JwtConstants;
 import ascendcorp.com.order.logger.Logger;
-import ascendcorp.com.order.service.grpc.credentials.JwtCallCredential;
-import ascendcorp.com.order.service.grpc.interceptor.ClientBasicAuthInterceptor;
-import ascendcorp.com.order.service.grpc.interceptor.ClientOAuth2Interceptor;
+import ascendcorp.com.order.grpc.credentials.JwtCallCredential;
+import ascendcorp.com.order.grpc.interceptor.ClientBasicAuthInterceptor;
+import ascendcorp.com.order.grpc.interceptor.ClientOAuth2Interceptor;
 import brave.grpc.GrpcTracing;
 import io.grpc.ManagedChannel;
 import io.grpc.Metadata;

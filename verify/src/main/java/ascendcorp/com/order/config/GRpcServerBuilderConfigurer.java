@@ -21,8 +21,6 @@ public class GRpcServerBuilderConfigurer extends
   @Override
   public void configure(ServerBuilder<?> serverBuilder) {
     serverBuilder.intercept(monitoringInterceptor);
-
-
   }
 
 

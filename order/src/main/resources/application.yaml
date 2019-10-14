@@ -16,3 +16,9 @@ spring:
 grpc:
   security:
     cert-chain: file:ssl/localhost.crt
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,prometheus
