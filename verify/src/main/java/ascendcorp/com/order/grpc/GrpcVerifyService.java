@@ -1,4 +1,4 @@
-package ascendcorp.com.order.service.grpc;
+package ascendcorp.com.order.grpc;
 
 import ascendcorp.com.order.GrpcOrder;
 import ascendcorp.com.order.OrderRequest;
@@ -14,7 +14,6 @@ import ascendcorp.com.order.repository.OrderRepository;
 import ascendcorp.com.order.repository.VerifyOrderRepository;
 import io.grpc.Status;
 import io.grpc.stub.StreamObserver;
-import me.dinowernli.grpc.prometheus.MonitoringServerInterceptor;
 import org.lognet.springboot.grpc.GRpcService;
 import org.springframework.security.access.prepost.PreAuthorize;
 

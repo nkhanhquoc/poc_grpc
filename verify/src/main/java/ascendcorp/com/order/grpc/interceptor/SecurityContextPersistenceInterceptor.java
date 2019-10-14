@@ -1,4 +1,4 @@
-package ascendcorp.com.order.service.grpc.interceptor;
+package ascendcorp.com.order.grpc.interceptor;
 
 import ascendcorp.com.order.logger.Logger;
 import io.grpc.ForwardingServerCallListener.SimpleForwardingServerCallListener;

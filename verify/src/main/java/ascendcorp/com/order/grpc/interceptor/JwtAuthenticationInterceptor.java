@@ -1,11 +1,9 @@
-package ascendcorp.com.order.service.grpc.interceptor;
+package ascendcorp.com.order.grpc.interceptor;
 
 import static com.google.common.base.Strings.nullToEmpty;
 
 import ascendcorp.com.order.constant.JwtConstants;
 import ascendcorp.com.order.logger.Logger;
-import io.grpc.Context;
-import io.grpc.Contexts;
 import io.grpc.Metadata;
 import io.grpc.ServerCall;
 import io.grpc.ServerCall.Listener;
@@ -14,8 +12,6 @@ import io.grpc.ServerInterceptor;
 import io.grpc.Status;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jws;
-import io.jsonwebtoken.Jwt;
-import io.jsonwebtoken.JwtException;
 import io.jsonwebtoken.JwtParser;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureException;

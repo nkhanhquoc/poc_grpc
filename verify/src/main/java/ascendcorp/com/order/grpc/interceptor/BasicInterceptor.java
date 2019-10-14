@@ -1,4 +1,4 @@
-package ascendcorp.com.order.service.grpc.interceptor;
+package ascendcorp.com.order.grpc.interceptor;
 
 import static com.google.common.base.Strings.nullToEmpty;
 

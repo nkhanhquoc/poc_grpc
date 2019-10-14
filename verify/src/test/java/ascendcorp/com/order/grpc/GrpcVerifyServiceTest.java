@@ -1,6 +1,4 @@
-package ascendcorp.com.order.service.grpc;
-
-import static org.junit.Assert.*;
+package ascendcorp.com.order.grpc;
 
 import io.grpc.testing.GrpcCleanupRule;
 import org.junit.Rule;

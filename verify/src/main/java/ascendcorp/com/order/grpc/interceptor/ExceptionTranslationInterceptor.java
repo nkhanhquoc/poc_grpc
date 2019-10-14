@@ -1,4 +1,4 @@
-package ascendcorp.com.order.service.grpc.interceptor;
+package ascendcorp.com.order.grpc.interceptor;
 
 import ascendcorp.com.order.logger.Logger;
 import io.grpc.ForwardingServerCallListener.SimpleForwardingServerCallListener;
@@ -10,7 +10,6 @@ import io.grpc.ServerInterceptor;
 import io.grpc.Status;
 import java.util.Objects;
 import org.lognet.springboot.grpc.GRpcGlobalInterceptor;
-import org.springframework.context.annotation.Configuration;
 import org.springframework.security.access.AccessDeniedException;
 import org.springframework.security.authentication.AuthenticationTrustResolver;
 import org.springframework.security.authentication.AuthenticationTrustResolverImpl;
