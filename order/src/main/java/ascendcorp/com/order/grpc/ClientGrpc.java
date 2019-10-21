@@ -17,9 +17,13 @@ import io.grpc.netty.NettyChannelBuilder;
 import io.grpc.stub.MetadataUtils;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
+import io.prometheus.client.CollectorRegistry;
 import java.io.IOException;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;
+import me.dinowernli.grpc.prometheus.Configuration;
+import me.dinowernli.grpc.prometheus.MonitoringClientInterceptor;
 import org.lognet.springboot.grpc.autoconfigure.GRpcServerProperties;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.security.core.GrantedAuthority;
@@ -34,12 +38,18 @@ public class ClientGrpc{
 
   ManagedChannel channel;
 
+  private CollectorRegistry collectorRegistry = new CollectorRegistry();
 
   public ClientGrpc(GRpcServerProperties grpcServerProperties, GrpcTracing grpcTracing) throws IOException {
+
+    MonitoringClientInterceptor monitoringInterceptor =
+        MonitoringClientInterceptor.create(Configuration.cheapMetricsOnly().withCollectorRegistry(collectorRegistry));
 
     this.channel = NettyChannelBuilder.
         forAddress("localhost",50051)
         .intercept(grpcTracing.newClientInterceptor())
+//        .intercept(monitoringInterceptor)
+//        .keepAliveTime(2000, TimeUnit.MILLISECONDS)
         .sslContext(
             GrpcSslContexts
                 .forClient()

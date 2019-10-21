@@ -124,15 +124,16 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 //    .withUser("test1").password("password").roles("ADMIN");
   }
 
+  @Override
   public void configure(HttpSecurity http) throws Exception {
     http
         .authorizeRequests()
-        .antMatchers("/oauth/authorize**", "/login**", "/error**")
+        .antMatchers("/actuator/prometheus","/actuator/**","/oauth/authorize**", "/login**", "/error**")
         .permitAll()
         .and()
         .authorizeRequests()
-        .antMatchers("/actuator/health").permitAll()
-        .antMatchers("/actuator/**").hasRole("ADMIN")
+////        .antMatchers("/actuator/**").permitAll()
+////        .antMatchers("/actuator/**").hasRole("ADMIN")
         .anyRequest().hasRole("RESTRICTED")
         .accessDecisionManager(accessDecisionManager())
         .and()

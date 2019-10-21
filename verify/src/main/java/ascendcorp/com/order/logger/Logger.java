@@ -1,10 +1,8 @@
 package ascendcorp.com.order.logger;
 
-
 import java.io.Serializable;
 import com.ascendcorp.logger.log4j.ACNLogger;
 import org.apache.commons.lang3.StringUtils;
-
 
 public class Logger implements Serializable {
 

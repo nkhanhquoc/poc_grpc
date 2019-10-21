@@ -22,7 +22,7 @@ public class OrderController {
   }
 
   @GetMapping("/order-grpc-basic")
-  public ResponseEntity orderGrpcBasic(@RequestParam("order") String value, @RequestParam("token") String token){
+  public ResponseEntity orderGrpcBasic(@RequestParam("order") String value){
 
     logger.info("GRPC get request: {}",value);
     GrpcOrder grpcOrder = clientGrpc.sendOrderBasic(value);
@@ -50,7 +50,7 @@ public class OrderController {
   }
 
   @GetMapping("/order-grpc-jwt")
-  public ResponseEntity orderGrpcJwt(@RequestParam("order") String value, @RequestParam("token") String token){
+  public ResponseEntity orderGrpcJwt(@RequestParam("order") String value){
 
     logger.info("GRPC get request: {}",value);
     GrpcOrder grpcOrder = clientGrpc.sendOrderJwt(value);

@@ -6,20 +6,6 @@ spring:
   sleuth:
     sampler:
       probability: 1.0
-  cloud:
-    stream:
-      kafka:
-        binder:
-          brokers: localhost:9092
-      bindings:
-        order-verify-request:
-          destination: orderVerifyRequest
-          contentType: application/json
-          group: requestProducer
-        order-verify-response:
-          destination: orderVerifyResponse
-          contentType: application/json
-          group: responseConsumer
   datasource:
     url: jdbc:mysql://localhost:3306/test_springboot_stream?useUnicode=yes&characterEncoding=UTF-8
     username: root
@@ -43,4 +29,10 @@ grpc:
   security:
     cert-chain: file:../order/ssl/server.crt
     private-key: file:../order/ssl/server.pem
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,prometheus
 

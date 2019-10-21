@@ -14,6 +14,9 @@ import ascendcorp.com.order.repository.OrderRepository;
 import ascendcorp.com.order.repository.VerifyOrderRepository;
 import io.grpc.Status;
 import io.grpc.stub.StreamObserver;
+import io.opencensus.trace.Span;
+import io.opencensus.trace.Tracer;
+import io.opencensus.trace.Tracing;
 import org.lognet.springboot.grpc.GRpcService;
 import org.springframework.security.access.prepost.PreAuthorize;
 
@@ -26,6 +29,8 @@ public class GrpcVerifyService extends VerifyServiceGrpc.VerifyServiceImplBase {
   private OrderRepository orderRepository;
   private VerifyOrderMapper mapper;
   private OrderMapper orderMapper;
+
+  private static final Tracer tracer = Tracing.getTracer();
 
   public GrpcVerifyService(
       VerifyOrderRepository verifyOrderRepository,
@@ -41,6 +46,9 @@ public class GrpcVerifyService extends VerifyServiceGrpc.VerifyServiceImplBase {
   @Override
   @PreAuthorize("hasRole('USER')")
   public void verifyOrder(OrderRequest request, StreamObserver<OrderResponse> responseObserver) {
+
+    Span span = GrpcVerifyService.tracer.spanBuilder("(*GrpcVerifyService).capitalize").setRecordEvents(true).startSpan();
+
 
     String orderId = request.getOrderId();
 
@@ -71,6 +79,7 @@ public class GrpcVerifyService extends VerifyServiceGrpc.VerifyServiceImplBase {
       );
     }
 
+    span.end();
     responseObserver.onCompleted();
 
   }
