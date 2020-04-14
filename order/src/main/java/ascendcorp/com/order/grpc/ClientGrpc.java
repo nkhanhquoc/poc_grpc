@@ -42,7 +42,6 @@ public class ClientGrpc{
 
     MonitoringClientInterceptor monitoringInterceptor =
         MonitoringClientInterceptor.create(Configuration.cheapMetricsOnly().withCollectorRegistry(collectorRegistry));
-
     this.channel = NettyChannelBuilder.
         forAddress("localhost",50051)
         .intercept(grpcTracing.newClientInterceptor())
@@ -63,25 +62,18 @@ public class ClientGrpc{
         VerifyServiceGrpc
             .newBlockingStub(channel)
             .withInterceptors(new ClientBasicAuthInterceptor());
-
     OrderResponse response = verifyStub.verifyOrder(OrderRequest.newBuilder()
         .setOrderId(value)
         .build());
-
     logger.info("response from grpc server: "+response.getOrder());
     return response.getOrder();
-
   }
 
   public GrpcOrder sendOrderOAuth2(String value, String token){
-
     VerifyServiceGrpc.VerifyServiceBlockingStub verifyStub =
         VerifyServiceGrpc
             .newBlockingStub(channel)
             .withInterceptors(new ClientOAuth2Interceptor(token));
-//for OAuth2
-//    verifyStub = token(verifyStub, token);
-
     OrderResponse response = verifyStub.verifyOrder(OrderRequest.newBuilder()
         .setOrderId(value)
         .build());
