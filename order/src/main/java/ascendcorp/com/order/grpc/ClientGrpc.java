@@ -77,19 +77,15 @@ public class ClientGrpc{
     OrderResponse response = verifyStub.verifyOrder(OrderRequest.newBuilder()
         .setOrderId(value)
         .build());
-
     logger.info("response from grpc server: "+response.getOrder());
     return response.getOrder();
-
   }
 
   public GrpcOrder sendOrderJwt(String value){
-
     //for JWT
     String jwt = getJwt();
     logger.info("JWT Token: {}",jwt);
     JwtCallCredential jwtToken = new JwtCallCredential(jwt);
-
     VerifyServiceGrpc.VerifyServiceBlockingStub verifyStub =
         VerifyServiceGrpc
             .newBlockingStub(channel)
@@ -99,12 +95,10 @@ public class ClientGrpc{
         .build());
     logger.info("response from grpc server: "+response.getOrder());
     return response.getOrder();
-
   }
 
   private VerifyServiceGrpc.VerifyServiceBlockingStub token(
       VerifyServiceGrpc.VerifyServiceBlockingStub stub, String token){
-
     Metadata metadata = new Metadata();
     metadata.put(Metadata.Key.of("authorization", Metadata.ASCII_STRING_MARSHALLER),
         "Bearer "+token);
@@ -115,7 +109,6 @@ public class ClientGrpc{
   private static String getJwt() {
     List<GrantedAuthority> grantedAuthorities = AuthorityUtils
         .commaSeparatedStringToAuthorityList("ROLE_USER");
-
     return Jwts.builder()
         .setSubject("test1") // client's identifier
         .claim("authorities", grantedAuthorities.stream()
