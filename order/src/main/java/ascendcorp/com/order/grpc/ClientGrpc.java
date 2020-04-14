@@ -35,9 +35,7 @@ import org.springframework.stereotype.Service;
 public class ClientGrpc{
 
   private static final Logger logger = Logger.getInstance(ClientGrpc.class);
-
   ManagedChannel channel;
-
   private CollectorRegistry collectorRegistry = new CollectorRegistry();
 
   public ClientGrpc(GRpcServerProperties grpcServerProperties, GrpcTracing grpcTracing) throws IOException {
@@ -104,11 +102,9 @@ public class ClientGrpc{
         VerifyServiceGrpc
             .newBlockingStub(channel)
             .withCallCredentials(jwtToken);
-
     OrderResponse response = verifyStub.verifyOrder(OrderRequest.newBuilder()
         .setOrderId(value)
         .build());
-
     logger.info("response from grpc server: "+response.getOrder());
     return response.getOrder();
 
